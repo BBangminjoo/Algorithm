@@ -8,6 +8,8 @@ class Solution {
 			}else if(date1[i]>date2[i]) {
 				answer = 0;
 				break;
+			}else {
+				answer = 0;
 			}
 		}        
         return answer;
