@@ -12,6 +12,7 @@ class Solution {
 		for(int i=0; i<answer.length; i++) {
 			answer[i] = (String)list.get(i);
 		}
+	    
 		String result = String.join("",answer); 
         return result;
     }
