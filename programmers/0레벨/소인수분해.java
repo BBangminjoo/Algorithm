@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Solution {
+    public int[] solution(int n) {
+        int[] answer = {};
+		List list = new ArrayList();
+		
+		for(int i = 2; i <= n; i++) {
+            if(n % i == 0) {
+                while(n % i == 0)
+                    n /= i;
+                list.add(i);
+            }
+        }
+		answer = new int[list.size()];
+		for(int i=0;i<answer.length; i++) {
+			answer[i] = (int)list.get(i);
+		}
+		        
+        return answer;
+    }
+}
